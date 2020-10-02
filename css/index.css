@@ -1,0 +1,408 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    background-color: black;
+    
+}
+    
+.banner #banner{
+    background-image: url("../images/Banner-1.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner h1 a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+header ul a {
+    margin-right: 30px;
+}
+
+@media (min-width: 713px){
+    .banner h1 {
+        transform: translate(4.5%);
+    }
+}
+
+.banner div h4{
+    font-family: 'Sofia';
+    
+}
+/***********about section***********/
+@media (min-width:992px){
+.about{
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    color: #000;
+    
+}
+}
+@media (min-width:992px){
+
+.about .about-bg{ 
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/sky-bg.jpg');
+    opacity: .4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+}
+
+.title {
+    color: white;
+}
+@media (min-width:992px){
+.abt-cont{
+    
+   margin-top: 150px;
+   margin-bottom: 20px;
+   
+    
+}
+}
+/*
+.title::after{
+    content: "";
+    display: block;
+    height: 4px;
+    width: 40px;
+    background-color:#6195ff;
+    align-items: center;
+
+}*/
+.abt-box i{
+    font-size: 40px;
+    color: #6195FF;
+    margin-bottom: 20px;
+    
+}
+
+/******************* services **************/
+.services{
+    background-color:#2c2c2d;
+    width: 100%;
+    border-bottom: 100px;
+}
+.services .service{
+    margin-top: 50px;
+    color:whitesmoke;
+}
+.services .ser-img{
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.shadow {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+ }
+
+
+ /********************************** animation grow and shrink*************************************/
+ .grow img{
+    transition: 1s ease;
+    }
+    
+    .grow img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+
+    .grow {
+        transition: 1s ease;
+        }
+        
+        .grow:hover{
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+        transition: 1s ease;
+        
+        }
+
+.shrink img {
+        transition: 1s ease;
+        }
+        
+ .shrink img:hover{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+        transition: 1s ease;
+        }
+ /* Arrow 
+
+.arrow {
+	position: relative;
+  margin: 0 auto;
+  width: 10px;
+}
+
+.arrow .curve {
+	border: 2px solid grey;
+	border-color: transparent transparent transparent grey;
+	height: 150px;
+	width: 100px;
+	border-radius: 200px 0 0 150px;
+}
+
+.arrow .point {
+	position: absolute;
+	left: 19px;
+	top: 129px;
+}
+
+.arrow .point:before, .arrow .point:after {
+	border: 1px solid grey;
+	height: 25px;
+	content: "";
+	position: absolute;
+}
+
+.arrow .point:before {
+	top: -11px;
+	left: -11px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(-74deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow .point:after {
+  top: -20px;
+	left: 5px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(12deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+}*/
+/* Arrow End */
+
+/****************************** why choose us *********************************************************/
+
+@media (min-width:992px){
+    .choose{
+        position: relative;
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        color: #000;
+        
+    }
+}
+@media (min-width:992px){
+.choose .whychoose{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/sky-bg.jpg');
+    opacity: .4;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+.choose{
+    
+  
+    margin-bottom: 20px;
+    
+ }
+.choose .choose-img{
+margin-top: 120px;
+}  
+
+}
+
+.choose .choose-div{
+    margin-top: 50px;
+    
+}
+
+/**************************** contact us *******************************/
+.contactus {
+    background-image: url("../images/contactus-img.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+}
+@media (min-width:992px){
+.contact-form{
+   margin-top: 100px;
+}
+.msg-container{
+    margin-top: 80px;
+}
+.btn-container{
+    margin-top: 80px;
+}
+}
+
+.social {
+    background-color:#2c2c2d;
+    width: 100%;
+    height: 35vh;
+    color: whitesmoke;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 8vh;
+}
+/************Contact us style*************************/
+
+#contact-form{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-box{
+    margin-top: 100px;
+    background: rgba(20, 29, 40, 0.8);
+    width: 470px;
+    height: 300px;
+    color:#fff;
+    border-radius: 30px;
+}
+.name-wraper > input {
+    margin-left: .5rem;
+    background-color: transparent;
+    border-color: #fff;
+    margin-bottom: 1rem;
+    width: 27rem;
+    text-align: center;
+}
+.name-wraper > textarea {
+    background-color: transparent;
+    border-color: #fff;
+    margin-left: .5rem;
+    margin-bottom: 1rem;
+    width: 27rem;
+    text-align: center;
+}
+#contact-form button{
+    background: linear-gradient(to right, #f64f59, #db5ed1, #12c2e9);
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+    width: 28rem;
+    padding-top: 2rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+#contact-form button:hover{
+    background: linear-gradient(to right, #ec2f4b, rgb(0, 92, 153) );
+}
+
+/************************************media query section *********************************************/
+@media ( max-width: 712px ) {   /*******  banner ********/
+    .banner h1  {
+                
+                font-size: 1.875em;
+                color: whitesmoke;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+      .banner h1 a {
+          text-decoration: none;
+          color: whitesmoke;
+      }      
+     .banner h4 {
+                font-family: 'Sofia';
+                font-size: 1rem;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }    
+     }
+@media (max-width: 991px){
+    .about .about-bg{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .abt-cont{
+    
+        margin-top: 50px;
+       
+        
+     }
+}
+
+@media (max-width: 991px){
+    .choose .whychoose{
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .choose{
+    
+        margin-top: 10px;
+        margin-bottom: 20px;
+        
+     }
+   .choose .choose-img{
+    margin-top: 50px;
+   }  
+     
+}
+
+@media (max-width: 991px){
+    .input-area {
+        margin-bottom: 20px;
+        
+    }
+    .input-area > input{
+        width: 80%;
+    }
+    .msg-area{
+        margin-top: 20px;
+    }
+    .msg-area > textarea{
+        height: 100px;
+    }
+    .btn-container{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 991px){
+.footer-text h5{
+    font-size: 1rem;
+}
+}
+
